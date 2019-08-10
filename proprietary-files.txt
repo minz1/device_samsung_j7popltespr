@@ -327,7 +327,6 @@ vendor/lib/vendor.samsung.camera.device@3.3-impl.so
 vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
 vendor/lib/vendor.samsung.hardware.camera.device@3.2.so
 vendor/lib/vendor.samsung.hardware.camera.device@3.3.so
-vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so
 
 # Charger
 vendor/bin/hvdcp_opti

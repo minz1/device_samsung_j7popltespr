@@ -117,7 +117,7 @@ PRODUCT_PACKAGES += \
      Snap
 
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4 \
+    vendor.samsung.hardware.camera.provider@2.4-service \
     camera.device@1.0-impl \
     camera.device@3.3-impl \
     libjpega \

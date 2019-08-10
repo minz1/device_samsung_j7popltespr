@@ -14,21 +14,22 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.camera.provider@2.4-service"
+#define LOG_TAG "vendor.samsung.hardware.camera.provider@2.4-service"
 
-#include <android/hardware/camera/provider/2.4/ICameraProvider.h>
+#include "samsung_camera.h"
+
 #include <hidl/LegacySupport.h>
 
 #include <binder/ProcessState.h>
 
-using android::hardware::camera::provider::V2_4::ICameraProvider;
+using vendor::samsung::hardware::camera::provider::V2_4::ISecCameraProvider;
 using android::hardware::defaultPassthroughServiceImplementation;
 
 int main()
 {
-    ALOGI("Camera provider Service is starting.");
+    ALOGI("Sec Camera provider Service is starting.");
     // The camera HAL may communicate to other vendor components via
     // /dev/vndbinder
     android::ProcessState::initWithDriver("/dev/vndbinder");
-    return defaultPassthroughServiceImplementation<ICameraProvider>("legacy/0", /*maxThreads*/ 6);
+    return defaultPassthroughServiceImplementation<ISecCameraProvider>("legacy/0", /*maxThreads*/ 6);
 }
